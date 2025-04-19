@@ -1,0 +1,333 @@
+/* =================== */
+/* Base Reset & Global */
+/* =================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #e6eef7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ============= */
+/* Page Wrapper  */
+/* ============= */
+.page-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* ============= */
+/* Headings      */
+/* ============= */
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.headers {
+  font-size: 1.75rem;
+  text-align: center;
+  color: #ecf0f1; /* light text */
+  width: 90%;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 2px solid #2c3e50; /* dark border */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* deeper shadow */
+  background-color: #34495e; /* dark background */
+}
+
+
+.subHeaders {
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  color: #1f2937;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 8px;
+}
+
+/* ============= */
+/* Form Styles   */
+/* ============= */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+input[type="text"] {
+  margin-bottom: 75px;
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+.submitBtn {
+  margin-bottom: 50px;
+} 
+
+/* ============= */
+/* Meal Display  */
+/* ============= */
+.meal-section {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 10;
+  margin-top: 10px;
+}
+
+li {
+  background-color: #f3f4f6;
+  margin: 6px 0;
+  padding: 10px;
+  border-left: 4px solid #3b82f6;
+  border-radius: 4px;
+  font-size: 15px;
+  border-top: 1px solid #020614;
+  border-right: 1px solid #020614;
+  border-bottom: 1px solid #020614;
+  
+}
+
+.mealAndDelete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: 20px auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  background-color: #415e7e65;
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.mealAndDelete button {
+  background-color: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.mealAndDelete button:hover {
+  background-color: #2563eb;
+}
+
+.mealName {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #374963;
+}
+
+.mealOrIng {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 10px auto;
+  padding: 10px 15px;
+  background-color: #ecf0f1;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: #0b1014;
+  transition: background-color 0.2s ease;
+}
+
+.mealOrIng:hover {
+  background-color: #dfe6e9;
+}
+
+.mealOrIng button {
+  background-color: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.mealOrIng button:hover {
+  background-color: #2563eb;
+}
+
+
+/* Empty/Loading Text */
+p {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+/* ============= */
+/* Navbar Styles */
+/* ============= */
+nav {
+  background-color: #202020;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.title_name {
+  color: white;
+  position: relative;
+  top: 15px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Nav Hover/Active Styling */
+nav ul li a:hover {
+  background-color: #8ab6ee; /* Soft blue */
+  color: #020614;
+}
+
+nav ul li a.active {
+  background-color: #3b82f6; /* Button blue */
+  color: white;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  justify-content: space-between;
+}
+
+.hamburger .bar {
+  height: 4px;
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ================ */
+/* Responsive Menu  */
+/* ================ */
+@media (max-width: 768px) {
+  .title_name {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #252525;
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 15px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mealAndDelete {
+    flex-direction: column;
+  }
+  
+  .mealName {
+    font-size: 1.25rem;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .mealAndDelete button {
+    align-self: center;
+  }
+
+  
+}
